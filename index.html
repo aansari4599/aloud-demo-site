@@ -1,8 +1,6 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sunrise Bakery — Fresh Bread Daily</title>
     <style>
       body {
@@ -44,7 +42,7 @@
     <p>Small-batch sourdough, pastries, and coffee in the heart of town since 1998.</p>
 
     <!-- heading skip: h1 -> h3 -->
-    <h3 id="story">Our story</h3>
+    <h2 id="story">Our story</h2>
     <p>
       What started as a single wood-fired oven is now a neighborhood institution. We mill our own
       flour and proof every loaf for 48 hours.
@@ -52,19 +50,13 @@
     <p><a href="#story">Read more</a></p>
 
     <!-- 3 images with no alt -->
-    <img src="IMG_4723.jpg" />
-    <img src="DSC_0042.png" />
-    <img src="bakery-photo-final-v2.jpg" />
+    <img src="IMG_4723.jpg" alt="Freshly baked sourdough bread on a wooden table">
+    <img src="DSC_0042.png" alt="Freshly baked sourdough bread on a wooden table">
+    <img src="bakery-photo-final-v2.jpg" alt="Freshly baked sourdough bread on a wooden table">
 
     <!-- 2 images with alt="image" -->
-    <img
-      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='100'%3E%3Crect width='160' height='100' fill='%23c4884a'/%3E%3C/svg%3E"
-      alt="image"
-    />
-    <img
-      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='100'%3E%3Crect width='160' height='100' fill='%236a8f5f'/%3E%3C/svg%3E"
-      alt="image"
-    />
+    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='100'%3E%3Crect width='160' height='100' fill='%23c4884a'/%3E%3C/svg%3E" alt="">
+    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='100'%3E%3Crect width='160' height='100' fill='%236a8f5f'/%3E%3C/svg%3E" alt="Solid sage green background">
 
     <!-- second h1 -->
     <h1 id="visit">Visit us</h1>
@@ -74,9 +66,9 @@
     <p style="color: #999; background: #aaa; padding: 4px">Open weekdays 7am to 3pm.</p>
 
     <!-- icon-only button (unlabeled) -->
-    <button id="cart" type="button">
+    <button id="cart" type="button" aria-label="Shopping Cart">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-        <path d="M2 2h2l2 8h6l2-6H5" stroke="currentColor" fill="none" />
+        <path d="M2 2h2l2 8h6l2-6H5" stroke="currentColor" fill="none"></path>
       </svg>
     </button>
 
@@ -85,7 +77,7 @@
 
     <!-- unlabeled input -->
     <p>Get our weekly bake schedule:</p>
-    <input type="text" />
+    <input type="text" aria-label="Input field">
 
     <!-- keyboard trap: 3 buttons whose keydown handler cycles focus among themselves -->
     <div id="promo-carousel">
@@ -113,5 +105,6 @@
         });
       });
     </script>
-  </body>
-</html>
+  
+
+</body></html>
