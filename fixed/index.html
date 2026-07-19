@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sunrise Bakery — Fresh Bread Daily</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 2rem auto;
+        max-width: 720px;
+        color: #222;
+        background: #fff;
+      }
+      img {
+        width: 160px;
+        height: 100px;
+        object-fit: cover;
+        background: #ddd;
+        margin: 4px;
+      }
+      .btn {
+        background: #2b6cb0;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 4px;
+        display: inline-block;
+        cursor: pointer;
+        margin: 8px 0;
+        border: none;
+        font-size: 1rem;
+      }
+      nav a {
+        margin-right: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#story">Our story</a>
+      <a href="#visit">Visit</a>
+    </nav>
+
+    <main>
+    <h1>Sunrise Bakery</h1>
+    <p>Small-batch sourdough, pastries, and coffee in the heart of town since 1998.</p>
+
+    <h2 id="story">Our story</h2>
+    <p>
+      What started as a single wood-fired oven is now a neighborhood institution. We mill our own
+      flour and proof every loaf for 48 hours.
+    </p>
+    <p><a href="#story">Read our full story</a></p>
+
+    <img
+      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='200'%3E%3Crect width='320' height='200' fill='%23c4884a'/%3E%3Cellipse cx='160' cy='120' rx='100' ry='45' fill='%23e8c07d'/%3E%3Ctext x='160' y='50' text-anchor='middle' font-size='22' fill='%23fff' font-family='sans-serif'%3ESourdough loaf%3C/text%3E%3C/svg%3E"
+      alt="Graphic of a golden loaf shape labeled 'Sourdough loaf'"
+    />
+    <img
+      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='200'%3E%3Crect width='320' height='200' fill='%23f3e2c7'/%3E%3Cpath d='M60 140 Q160 60 260 140 Z' fill='%23d19a3f'/%3E%3Ctext x='160' y='180' text-anchor='middle' font-size='22' fill='%23553311' font-family='sans-serif'%3ECroissant%3C/text%3E%3C/svg%3E"
+      alt="Graphic of a crescent shape labeled 'Croissant'"
+    />
+    <img
+      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='200'%3E%3Crect width='320' height='200' fill='%237fa8c9'/%3E%3Crect x='60' y='110' width='200' height='14' fill='%23664422'/%3E%3Crect x='90' y='124' width='12' height='50' fill='%23664422'/%3E%3Crect x='218' y='124' width='12' height='50' fill='%23664422'/%3E%3Ctext x='160' y='60' text-anchor='middle' font-size='22' fill='%23fff' font-family='sans-serif'%3EOutdoor table%3C/text%3E%3C/svg%3E"
+      alt="Graphic of a table labeled 'Outdoor table'"
+    />
+    <img
+      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='200'%3E%3Crect width='320' height='200' fill='%23fff4e0'/%3E%3Ccircle cx='160' cy='110' r='60' fill='%23b8742c'/%3E%3Ctext x='160' y='40' text-anchor='middle' font-size='22' fill='%23553311' font-family='sans-serif'%3ECountry loaf%3C/text%3E%3C/svg%3E"
+      alt="Graphic of a brown circle labeled 'Country loaf'"
+    />
+    <img
+      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='200'%3E%3Crect width='320' height='200' fill='%236a8f5f'/%3E%3Crect x='70' y='80' width='180' height='60' rx='10' fill='%23a8c686'/%3E%3Ctext x='160' y='50' text-anchor='middle' font-size='22' fill='%23fff' font-family='sans-serif'%3EFocaccia%3C/text%3E%3C/svg%3E"
+      alt="Graphic of a green flatbread shape labeled 'Focaccia'"
+    />
+
+    <h2 id="visit">Visit us</h2>
+    <p>Find us at 42 Baker Street. Street parking available on weekends.</p>
+
+    <p style="color: #222; background: #fff; padding: 4px">Open weekdays 7am to 3pm.</p>
+
+    <button id="cart" type="button" aria-label="View shopping cart">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M2 2h2l2 8h6l2-6H5" stroke="currentColor" fill="none" />
+      </svg>
+    </button>
+
+    <button class="btn" type="button" onclick="alert('Subscribed!')">
+      Subscribe to newsletter
+    </button>
+
+    <p>Get our weekly bake schedule:</p>
+    <label for="email">Email address</label>
+    <input id="email" type="text" />
+
+    <div id="promo-carousel">
+      <button id="offer-prev" type="button">Previous offer</button>
+      <button id="offer-next" type="button">Next offer</button>
+      <button id="offer-claim" type="button">Claim deal</button>
+    </div>
+
+    <p><a href="#menu">See the full menu</a></p>
+    <p><a href="#visit">Plan your visit</a></p>
+    </main>
+  </body>
+</html>
